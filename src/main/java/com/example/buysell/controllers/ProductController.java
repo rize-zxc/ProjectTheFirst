@@ -24,10 +24,10 @@ public class ProductController {
         if (!productService.isServerAvailable()) {
 
             model.addAttribute("message", "Сервис временно недоступен. Иди меняй статус.");
-            return "error"; // Возвращаем шаблон error.html
+            return "error"; 
         }
 
-        return "products"; // Возвращаем шаблон products.html
+        return "products"; 
     }
 
     @GetMapping("/status")
